@@ -18,6 +18,11 @@ function Masiv_pozitiv(masiv) {
       }
 
     }
+    
+   for (let i = 0; i < val_zer; i++) {
+      masiv.push(valMax++);
+      
+   }
 
 }
 

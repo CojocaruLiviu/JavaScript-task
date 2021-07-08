@@ -25,7 +25,7 @@ function Studenti(){
         nota[j] = parseInt(nota[j], 10);
         resultstud += ' ' + nota[j];
         med += nota[j];
-        sortare[i] = nota[j];
+        sortare[j] = nota[j];
         alert(sortare);
       }
     //Students with negative media
@@ -77,8 +77,9 @@ function Studenti(){
       
         for (let j = 0; j < sortare.length; j++) {
           resultnote[j] = sortare[j];
-          sortare.sort(function(a, b){return a - b});
-          total += sortare[j] + ' ';
+          
+          resultnote.sort(function(a, b){return a - b});
+          total += resultnote[j] + ' ';
           //Nu am reusit sa afisezi la fiecare notele sortate 
           
         }
