@@ -17,4 +17,4 @@
     //add element at the top array
         styles.unshift('Rapp', 'Reggi');
 
-        document.getElementById("style").innerHTML = ("Styles is:<br>" + styles);
+        console.log("Styles is: " + styles);

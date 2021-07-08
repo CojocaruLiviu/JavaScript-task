@@ -1,4 +1,3 @@
-
 function Studenti(){
   let nota = [], name = [], nrnot, valmax, valmin, med = 0, max = 0, min = 10;
   let resultstud =''; 
@@ -11,18 +10,18 @@ function Studenti(){
   nrst = parseInt(nrst, 10);
   med = parseInt(med, 10);
   max = parseInt(max, 10);
-  min = parseInt(min, 10);  
-
-  for (var i = 0; i < nrst; i++) {
-    name = prompt('Introduceti nume student '+ i++,'');
+  min = parseInt(min, 10);
+  
+  
+  for (let i = 0; i < nrst; i++) {
+    name = prompt('Introduceti nume student '+i,'');
     info[i] = name;
-    nrnot = prompt('Introdu nr de note pentru: '+ name,'');
+    nrnot = prompt('Introdu nr de note pentru: '+name,'');
     nrnot = parseInt(nrnot, 10);
     resultstud += ' '+ name + ': ' ;
     med = 0;
-    
-      for (var j = 0; j < nrnot; j++) {
-        nota[j] = prompt('Introduceti nota '+ j++,'');
+      for (let j = 0; j < nrnot; j++) {
+        nota[j] = prompt('Introduceti nota '+j,'');
         nota[j] = parseInt(nota[j], 10);
         resultstud += ' ' + nota[j];
         med += nota[j];
@@ -90,4 +89,3 @@ function Studenti(){
   document.getElementById("desc").innerHTML = ("Studentii sortati:<br>" + total );
     
   }
-  
