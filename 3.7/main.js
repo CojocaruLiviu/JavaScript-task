@@ -18,8 +18,6 @@ function Masiv_position(){
 
   var arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   var arr2 = [];
-  
   extract(start, end, arr1, arr2);
   console.log(arr2);
-    
   }
