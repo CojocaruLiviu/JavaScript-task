@@ -10,6 +10,7 @@ function myFunction() {
     let t = document.createTextNode(z);
     y.appendChild(t);
     document.getElementById("myOl").appendChild(y);
+    document.getElementById("Element").value = "";
     }
 }
 
