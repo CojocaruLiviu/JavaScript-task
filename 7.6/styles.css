@@ -1,0 +1,30 @@
+#gameBoardBorder{
+  width: 480px;
+  height: 480px;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  display: flex; 
+  flex-flow: row wrap; 
+}
+
+h1{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.whiteSquare{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+
+.blackSquare{
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+body{
+  background-color: lightblue;
+}

@@ -1,11 +1,14 @@
-function FirstUppercase(){
+function FirstUppercase() {
 	let name;
-	name = document.getElementById("name").value ;
+	name = document.getElementById("name").value;
 
-  	console.log(ucFirst(name));
+	console.log(Frstlet(name));
 }
 
-function ucFirst(str) {
-  str = str.charAt(0).toUpperCase()+str.slice(1);
-return str;
+let Frstlet = function ucFirst(str) {
+
+	str = str.charAt(0).toUpperCase() + str.slice(1);
+
+	return str;
+
 }

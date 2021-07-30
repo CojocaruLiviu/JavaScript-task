@@ -1,7 +1,6 @@
 function ConvertNumb() {
   
-   var nrchange;
-   nrchange = document.getElementById("num").value
+   const nrchange = document.getElementById("num").value
    nrchange = parseInt(nrchange);
    ConvertInWord(nrchange);
   }

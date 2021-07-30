@@ -1,18 +1,17 @@
 document.body.style.background = "red";
-
-
+let conc;
 for (let i = 1; i <= 5; i++) {
-
-    setTimeout(function(){ 
-
+    setTimeout(function(){
     let x = document.createElement("OL");
     x.setAttribute("id", "Concat");
     document.body.appendChild(x);  
     let y = document.createElement("LI");
-    let t = document.createTextNode("Element " + i);
+    let t = document.createTextNode("Element " +i );
     y.appendChild(t);
-    document.getElementById("Concat").appendChild(y)
-
-    }, 3000);
-        
+    document.getElementById("Concat").appendChild(y), 3000});
 }
+    
+
+
+
+ 

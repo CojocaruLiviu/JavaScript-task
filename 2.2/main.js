@@ -1,25 +1,34 @@
 function sum() {
 
-  var a, b, val = 0;
+	let val = 0;
+	let a = document.getElementById("a").value;
+	let b = document.getElementById("b").value;
 
-  a = document.getElementById("a").value ;
-  b = document.getElementById("b").value ;
-
-  a = parseInt(a);
-  b = parseInt(b);
+	a = parseInt(a);
+	b = parseInt(b);
 
 
- if (a <= b) {
- 	for (var i = a; i <= b; i++) {
- 	
-	 	if(i % 2 == 0){
+	if (a <= b) {
 
-	 		val = val + i;		
-			  
+		for (var i = a; i <= b; i++) {
+
+			(i % 2 == 0) ? (val += i) : "";
+
 		}
-	}
-	console.log("The amount is " + val);
+		console.log('The amount of is ' + val);
 
-}else {console.log("Enter range from low to high ");}
+	}
+	else {
+
+		for (var i = b; i <= a; i++) {
+
+			(i % 2 == 0) ? (val += i) : "";
+
+		}
+		console.log('The amount of is ' + val);
+
+	}
 
 }
+
+
