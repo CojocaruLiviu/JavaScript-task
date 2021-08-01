@@ -1,32 +1,23 @@
 const arr = [
-	[1,2], [3, 4], [null, 4], [3, undefined]
+	[1, 2], [3, 4], [null, 4], [3, undefined]
 ]
 
 let aux = [];
 
-function check(val){
+function check(val) {
 
-	for (let j = 0; j < val.length/2; j++) {
+	for (let j = 0; j < val.length / 2; j++) {
 
-		if ( (typeof(val[j++]) == 'number') && (typeof(val[j]) == 'number')   )  {
-		
-			console.log(val);
-					
-		}	
-		
-	
-			
+		((typeof (val[j++]) == 'number') && (typeof (val[j]) == 'number')) ? console.log(val) : "";
 	}
 
 }
 
-
 for (let i = 0; i < arr.length; i++) {
 
 	check(arr[i]);
-	
-	}
 
-	
-	
-	
+}
+
+
+

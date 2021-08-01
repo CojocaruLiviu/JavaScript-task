@@ -9,8 +9,8 @@ let CurentNr = function extractCurrencyValue(str) {
 
    var matches = str.match(/(\d+)/);
 
-   if (matches) {
-      str = matches[0];
-   }
+   (matches) ?
+      str = matches[0] : "";
    return str;
+
 }

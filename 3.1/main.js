@@ -50,11 +50,12 @@ function Masiv_for_in() {
   val = document.getElementById("num").value;
   val = parseInt(val, 10);
   for (let key in val) {
+      alert("helo");
+      n[key] = key;
+      
 
-    val[key] = key;
-  
   }
-  document.getElementById("for_in").innerHTML = ("Masiv for_in: " + val);
+  //document.getElementById("for_in").innerHTML = ("Masiv for_in: " + n);
 
 
 }
