@@ -1,5 +1,5 @@
 
-function myFunction() {
+function InsertList() {
 
     let z = document.getElementById("Element").value;
     if (z.length > 0) {
