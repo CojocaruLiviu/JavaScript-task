@@ -1,8 +1,8 @@
 function numbersOnly(value) {
  
-  if (typeof (value) === 'number') {
+  (typeof (value) === 'number') :
       return value;
-  }
+  
 }
 
 function Masiv_position(){

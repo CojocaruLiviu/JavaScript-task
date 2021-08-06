@@ -6,9 +6,7 @@ function Incriment() {
   }
 
 function Decrement() {
-    document.getElementById("num").stepDown();
-  }
+   
+  document.getElementById("num").stepDown();
   
-
-
-
+}
