@@ -9,8 +9,8 @@ let concatHeight = elem.offsetHeight;
 function func() {
     concatWidth += concatWidth;
     concatHeight += concatHeight;
-
     elem.style.width = concatWidth + 'px';
     elem.style.height = concatWidth + 'px';
-
+    alert('Widht: ' + concatWidth + '; Height: ' + concatHeight);
+    
 }
