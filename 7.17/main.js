@@ -1,12 +1,16 @@
-let a,b;
-let elem = document.getElementById('elem');
+let a, b;
+const elem = document.querySelector('#elem');
 let button = document.getElementById('button');
 button.addEventListener('click', func);
 
-a = getComputedStyle(elem).height;
-
-b = getComputedStyle(elem).width;
+let concatWidth = elem.offsetWidth;
+let concatHeight = elem.offsetHeight;
 
 function func() {
-    alert(a  + ' ' + b );
+    concatWidth += concatWidth;
+    concatHeight += concatHeight;
+
+    elem.style.width = concatWidth + 'px';
+    elem.style.height = concatWidth + 'px';
+
 }
