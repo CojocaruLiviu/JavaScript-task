@@ -1,20 +1,45 @@
 class Validator {
-  constructor(number){
-    this.number = number;
-    
+  constructor(value){
+    this.value = value;    
   }
 
-  isnumber(){
-      return this.name + ' ' + this.rate * this.days;
+
+isDate(){
+  for (let i = 0; i < this.value.length; i++) {
+      if (this.value[2] == '.') {
+        return 'Date ' + true;
+      }
     }
+  }
+
+isPhone(){
+  /*if (this.value.length > 8  ) {
+    return 'Phone ' + true;
+  }*/
+  for (let i = 0; i < this.value.length; i++) {
+    if (this.value[0] == '0' && this.value.length == 9 ) {
+      return 'Phone ' + true;
+    } 
     
+  } 
+}  
+
+isEmail(){
+  
+  for (let i = 0; i < this.value.length; i++) {
+   if (this.value[i] == '@') {
+      return 'Email ' + true;
+    } 
+   
+  }
+}
 
 };
+let validat = new Validator('liviu@mail.ru');
 
-let validator = new validator('068****09');
-let worker1 = new Person('Anton');
-
-console.log(worker.getSalary());
+console.log(validat.isDate());
+console.log(validat.isPhone());
+console.log(validat.isEmail());
 
 
 /* 
